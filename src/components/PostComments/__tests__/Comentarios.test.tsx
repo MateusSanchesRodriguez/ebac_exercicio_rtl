@@ -3,7 +3,7 @@ import PostComents from "../index";
 import { debug } from "console";
 
 describe("Teste para comentarios", () => {
-    test("Deve criar a insercao de um dos dois comentarios", () => {
+    test("Deve criar a insercao dos dois comentarios", () => {
         render(<PostComents />);
         fireEvent.change(screen.getByTestId("campo-comentario"), {
             target: {
